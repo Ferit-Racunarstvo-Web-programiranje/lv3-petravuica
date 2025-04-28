@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerija slika</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <h1>Galerija slika</h1>
+  <section class="gallery">
+    <% images.forEach(image => { %>
+      <figure>
+        <img src="<%= image.url %>" alt="<%= image.title %>">
+        <figcaption><%= image.title %></figcaption>
+      </figure>
+    <% }); %>
+  </section>
+</body>
+</html>

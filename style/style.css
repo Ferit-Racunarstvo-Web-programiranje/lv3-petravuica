@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body {
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a.image-popup-vertical-fit {
+  cursor: -webkit-zoom-in;
+}
+
+.img-gallery-magnific {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.magnific-img {
+  width: 30%;
+  min-width: 250px;
+}
+
+.magnific-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.magnific-img img:hover {
+  transform: scale(1.03);
+}
+
+.magnific-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .magnific-img img {
+    transition: all 0.3s ease;
+  }
+  
+  .magnific-img:hover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  
+
+
+
+.galerija h1 {
+
+  color: darkblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.galerija {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+.galerija figure {
+    width: 200px;
+    text-align: center;
+  }
+.galerija img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+.galerija img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+    border: 5px solid white;
+    border-radius: 10px;
+  }
+  
+.lightbox:target {
+    display: flex;
+  }
+  
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+.lightbox p {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
